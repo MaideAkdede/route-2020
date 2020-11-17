@@ -2,18 +2,24 @@
 > Intérêt de route : On ne recharge pas les pages, même si ça donne l'impression que si.
 > [Courte vidéo YT sur React Router - 2018 - Dev Ed](https://youtu.be/Law7wfdg_ls)
 ***
-# Table des matières :
-1. [Création du projet](#étape-de-création-du-projet)
+##  Table des matières :
 
-  [Étape 0](#étape-0), [Étape 1](#étape-1), [Étape 2](#étape-2), [Étape 3](#étape-3), [Étape 4](#étape-4), [Étape 5](#étape-5)
+1. [**Création du projet**](#étape-de-création-du-projet)
 
-2. Route
+  1. [Étape 0](#étape-0), [Étape 1](#étape-1), [Étape 2](#étape-2), [Étape 3](#étape-3), [Étape 4](#étape-4), [Étape 5](#étape-5)
 
-  1. [Exemple aperçu d'un route](#route)
-  2. [Link](#)
+
+2. [**Route**](#route-1)
+
+  1. [Import React](#import-react)
+  2. [Import déstructuré](#import-restructuré-du-router)
+  1. [Exemple aperçu d'un route](#aperçu--exemple)
+  2. [Link](#1-linklink)
+  3. [Route](#2-route)
+  4. [Switch](#3-switchswitch)
 
 ***
-# Étape de création du projet
+# Création du projet
 
 ## Étape - 0
 
@@ -97,7 +103,7 @@ import React, {Fragment} from 'react'
 <Fragment></Fragment>
 ```
 
-### Import Destructuré du Router
+## Import Destructuré du Router
 
 De la librairie `react-router-dom`, en faisant un *import déstructuré*, on import `BrowserRouter`, `Link`, `Route` & `Switch` :
 
@@ -145,6 +151,8 @@ Nouvelle version, en double balises,
 </Router>
 ```
 
+On peut également préciser `exact` afin que l'url rechercher correspond exactement à l'url demandé.
+
 Si l'url est égal à "page" (dans cet exemple-ci) alors afficher le composant Page qu'on aura préalablement importé dans le fichier :
 
 ``` Javascript
@@ -158,3 +166,5 @@ import Page from "./Page"
 Le `<Switch>` devra être placé autour des `<Route>`
 
 Switch va servir a analyser les composants et les données afin de **s'arrêter** dès que les données correspondents à ce qu'il recherche et évite ainsi d'afficher tous les composants d'un coups.
+
+Il va filtrer le contenu en fonction de l'url.
