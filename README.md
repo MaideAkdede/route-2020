@@ -5,12 +5,9 @@
 ##  Table des matières :
 
 1. [**Création du projet**](#étape-de-création-du-projet)
-
   1. [Étape 0](#étape-0), [Étape 1](#étape-1), [Étape 2](#étape-2), [Étape 3](#étape-3), [Étape 4](#étape-4), [Étape 5](#étape-5)
 
-
 2. [**Route**](#route-1)
-
   1. [Import React](#import-react)
   2. [Import déstructuré](#import-restructuré-du-router)
   1. [Exemple aperçu d'un route](#aperçu--exemple)
